@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
-export class Search extends Component {
+class Search extends Component {
   state = {
     text: ''
   };
@@ -28,9 +29,20 @@ export class Search extends Component {
             className='btn btn-dark btn-block'
           />
         </form>
+        <button
+          className='btn btn-block btn-light'
+          onClick={this.props.clearUsers}
+        >
+          Clear
+        </button>
       </div>
     );
   }
 }
+
+Search.propTypes = {
+  searchUsers: PropTypes.func.isRequired,
+  clearUsers: PropTypes.func.isRequired
+};
 
 export default Search;
