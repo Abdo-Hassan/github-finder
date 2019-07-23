@@ -54,7 +54,7 @@ const GithubState = props => {
         process.env.REACT_APP_GITGUB_CLIENT_ID
       }&client_secret=${process.env.REACT_APP_GITGUB_CLIENT_SECRET}`
     );
-    dispatch({ type: GET_REPOS, payload: res.date });
+    dispatch({ type: GET_REPOS, payload: res.data });
   };
 
   // clear users
