@@ -5,10 +5,12 @@ import { Link } from 'react-router-dom';
 const Navbar = ({ title, icon }) => {
   return (
     <nav className='navbar bg-dark'>
-      <h1 style={{ margin: 'auto' }}>
-        <i className={icon} style={{ marginRight: 10 }} />
-        {title}
-      </h1>
+      <Link to='/' style={{ margin: 'auto' }}>
+        <h1>
+          <i className={icon} style={{ marginRight: 10 }} />
+          {title}
+        </h1>
+      </Link>
       <ul>
         <li>
           <Link to='/'>Home</Link>
