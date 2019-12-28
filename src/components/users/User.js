@@ -42,7 +42,7 @@ const User = ({ match }) => {
       ) : (
         <i className='fas fa-times-circle text-danger' />
       )}
-      <div className='card grid-2'>
+      <div className='card grid-2' style={{ padding: '12px' }}>
         <div className='all-center'>
           <img
             src={avatar_url}
@@ -88,7 +88,7 @@ const User = ({ match }) => {
           </ul>
         </div>
       </div>
-      <div className='card text-center'>
+      <div className='card text-center' style={{ padding: '12px' }}>
         <div className='badge badge-primary'>Followers : {followers}</div>
         <div className='badge badge-success'>Following : {following}</div>
         <div className='badge badge-ligth'>Public Repos : {public_repos}</div>

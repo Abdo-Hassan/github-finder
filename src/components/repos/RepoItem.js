@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const RepoItem = ({ repo }) => {
   return (
-    <div className='card'>
+    <div className='card' style={{ padding: '12px' }}>
       <a href={repo.html_url}>{repo.name}</a>
     </div>
   );

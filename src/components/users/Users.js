@@ -3,12 +3,6 @@ import UserItem from './UserItem';
 import Spinner from '../layout/Spinner';
 import GithubContext from '../context/github/GithubContext';
 
-const userStyle = {
-  display: 'grid',
-  gridTemplateColumns: 'repeat(3,1fr)',
-  gridGap: '1rem'
-};
-
 const Users = () => {
   const githubContext = useContext(GithubContext);
   const { users, loading } = githubContext;
@@ -17,7 +11,7 @@ const Users = () => {
   } else {
     return (
       <div>
-        <div style={userStyle}>
+        <div className='grid-item'>
           {users.map(user => (
             <UserItem key={user.id} user={user} />
           ))}
