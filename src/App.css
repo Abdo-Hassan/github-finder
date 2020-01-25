@@ -419,7 +419,6 @@ table th {
 
   /* Navbar */
   .navbar {
-    display: block;
     text-align: center;
   }
 
@@ -458,5 +457,11 @@ table th {
 @media only screen and (max-width: 840px) {
   .grid-item {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .user-name {
+    font-size: 20px;
   }
 }

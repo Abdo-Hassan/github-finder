@@ -50,7 +50,7 @@ const User = ({ match }) => {
             alt='user'
             style={{ width: 150 }}
           />
-          <h1>{name}</h1>
+          <h1 className='user-name'>{name}</h1>
           <p>Location : {location}</p>
         </div>
         <div>
